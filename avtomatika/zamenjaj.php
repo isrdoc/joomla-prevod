@@ -24,6 +24,7 @@ foreach($site as $file) {
    $v = mysql_fetch_assoc($r);
    $vsebina = str_replace($v['kaj']." ",$v['sCim']." ",$vsebina);
    $vsebina = str_replace($v['kaj'].'"',$v['sCim'].'"',$vsebina);
+   $vsebina = str_replace($v['kaj'].":",$v['sCim'].":",$vsebina);
   }
   
   file_put_contents($sitePot."/".$file, $vsebina);
@@ -43,6 +44,7 @@ foreach($admin as $file) {
    $v = mysql_fetch_assoc($r);
    $vsebina = str_replace($v['kaj']." ",$v['sCim']." ",$vsebina);
    $vsebina = str_replace($v['kaj'].'"',$v['sCim'].'"',$vsebina);
+   $vsebina = str_replace($v['kaj'].":",$v['sCim'].":",$vsebina);
   }
 
   file_put_contents($adminPot."/".$file, $vsebina);
