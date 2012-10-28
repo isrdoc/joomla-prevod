@@ -14,7 +14,7 @@ defined('_JEXEC') or die;
  * @package  Joomla.Language
  * @since    1.6
  */
-abstract class en_USLocalise
+abstract class sl_SILocalise
 {
 	/**
 	 * Returns the potential suffixes for a specific number of items
@@ -23,6 +23,8 @@ abstract class en_USLocalise
 	 * @return	array  An array of potential suffixes.
 	 * @since	1.6
 	 */
+
+	//DENIA dodaj tu dvojino!
 	public static function getPluralSuffixes($count)
 	{
 		if ($count == 0) {
@@ -45,9 +47,9 @@ abstract class en_USLocalise
 	public static function getIgnoredSearchWords()
 	{
 		$search_ignore = array();
-		$search_ignore[] = "and";
 		$search_ignore[] = "in";
-		$search_ignore[] = "on";
+		$search_ignore[] = "v";
+		$search_ignore[] = "na";
 		return $search_ignore;
 	}
 	/**
