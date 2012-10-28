@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.0" client="site" type="language" method="upgrade">
-	<name>Slovenščina</name>
+	<name>SlovenÅ¡Äina</name>
 	<tag>sl-SI</tag>
 	<version>3.0.1.1</version>
 	<creationDate>2012-11-30</creationDate>

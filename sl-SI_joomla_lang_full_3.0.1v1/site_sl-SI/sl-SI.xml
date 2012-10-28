@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metafile version="3.0" client="site">
-	<name>Slovenščina</name>
+	<name>SlovenÅ¡Äina</name>
 	<tag>sl-SI</tag>
 	<version>3.0.1.1</version>
 	<creationDate>2012-11-30</creationDate>
@@ -11,7 +11,7 @@
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<description>sl-SI site language</description>
 	<metadata>
-		<name>Slovenščina</name>
+		<name>SlovenÅ¡Äina</name>
 		<tag>sl-SI</tag>
 		<rtl>0</rtl>
 		<locale>sl_SI.utf8, sl_SI.UTF-8, sl_SI, slo_SI, si, slovensko, slovenija, slovenia</locale>
