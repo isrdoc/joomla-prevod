@@ -25,7 +25,25 @@ foreach($site as $file) {
    $vsebina = str_replace($v['kaj'],$v['sCim'],$vsebina);
   }
   
-  echo $vsebina;
+  file_put_contents($sitePot."/".$file, $vsebina);
+ }
+}
+
+foreach($admin as $file) {
+ if(substr($file,-4)==".ini") {
+  $vsebina = file_get_contents($adminPot."/".$file);
+
+  $r = mysql_query("
+   SELECT * FROM zamenjaj;
+  ");
+  $n = mysql_num_rows($r);
+
+  for($i=0; $i<$n; $i++) {
+   $v = mysql_fetch_assoc($r);
+   $vsebina = str_replace($v['kaj'],$v['sCim'],$vsebina);
+  }
+
+  file_put_contents($adminPot."/".$file, $vsebina);
  }
 }
 
